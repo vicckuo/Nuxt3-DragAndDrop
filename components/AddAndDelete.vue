@@ -57,15 +57,15 @@
           <button
             v-if="div.type !== 'video'"
             @click="removeDiv(index)">
-            删除
+            刪除
           </button>
 
           <div v-if="div.type === 'video'">
             <button @click="playVideo(index)">播放</button>
-            <button @click="pauseVideo(index)">暂停</button>
+            <button @click="pauseVideo(index)">暫停</button>
             <button @click="stopVideo(index)">停止</button>
-            <button @click="restartVideo(index)">重新开始</button>
-            <button @click="removeDiv(index)">删除</button>
+            <button @click="restartVideo(index)">重新開始</button>
+            <button @click="removeDiv(index)">刪除</button>
           </div>
         </li>
       </ul>
@@ -235,7 +235,7 @@ function stopDrag() {
 }
 
 function showAlert() {
-  alert('双击事件触发！');
+  alert('你點擊div 兩次');
 }
 </script>
 
@@ -258,7 +258,7 @@ function showAlert() {
 
 button {
   padding: 10px 15px;
-  background-color: #4caf50; /* 绿色 */
+  background-color: #4caf50;
   color: white;
   border: none;
   border-radius: 5px;
